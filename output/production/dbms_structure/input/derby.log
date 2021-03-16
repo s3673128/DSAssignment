@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Sat Mar 13 18:23:10 CST 2021:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 引导数据库
+目录 /Users/lin/Documents/lance/dbms_heap/dbms_structure/output/production/dbms_structure/input/pedestrian 中的 Derby 版本 The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579) 实例 a816c00e-0178-2b1c-7c55-000006eeede0
+已从 file:/usr/local/db-derby-10.14.2.0-bin/lib/derby.jar 加载
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_261-b12
+user.dir=/Users/lin/Documents/lance/dbms_heap/dbms_structure/output/production/dbms_structure/input
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.6
+derby.system.home=null
+数据库类加载程序已启动 - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Mar 13 18:25:04 CST 2021：正在关闭 Derby 引擎
+----------------------------------------------------------------
+Sat Mar 13 18:25:04 CST 2021:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 关闭数据库目录 /Users/lin/Documents/lance/dbms_heap/dbms_structure/output/production/dbms_structure/input/pedestrian 上的实例 a816c00e-0178-2b1c-7c55-000006eeede0
+----------------------------------------------------------------
