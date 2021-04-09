@@ -1,0 +1,8 @@
+# cd class directory (I use the dbms_structure forder in this task)
+cd ~/dbms_structure/output/production/dbms_structure
+
+# load data with page size 4096 （The size you can change it to 1024 or 2048)
+java dbload -p 4096 input/Pedestrian_Counting_System_-_Monthly__counts_per_hour_.csv
+
+# query text: Sensor_Id=75,Date_Time=February 28, 2021 11:00:00 PM  (The search query you can change)
+java dbquery "4011/01/2019 05:00:00 PM" 4096

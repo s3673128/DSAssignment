@@ -1,0 +1,41 @@
+# Stop the database service
+# ps -ef | grep derbyrun | awk '{print $2}'|xargs kill -9
+
+# To database installation directory (my installation directory is the root)
+# Start the database service
+java -jar $DERBY_HOME/lib/derbyrun.jar server start
+
+# Start the ij environment
+java -jar $DERBY_HOME/lib/derbyrun.jar ij
+
+# Connect to the database
+>connect 'jdbc:derby:pedestrian;create=false';
+
+# Create a table:
+create table sensor(sensor_id smallint primary key,sensor_name varchar(128));
+create table pedestrian_data( id int primary key,sensor_id smallint,date_time timestamp,hourly_counts int);
+
+
+# View the number of sensor records
+select count(*) from sensor;
+select count(*) from pedestrian_data;
+
+# Clear table data
+>truncate table sensor;
+>truncate table pedestrian_data;
+>exit();
+
+
+# Enter the code compilation output directory and execute the Derby import program
+java -jar dbms.jar dbload -t derby input/Pedestrian_Counting_System_-_Monthly__counts_per_hour_.csv
+
+# To database installation directory (my installation directory is the root)
+# Start the ij environment
+java org.apache.derby.tools.ij
+
+# Connect to the database
+>connect 'jdbc:derby:pedestrian;create=false';
+
+# Query table data
+>select count(1) from sensor;
+>select count(1) from pedestrian_data;
