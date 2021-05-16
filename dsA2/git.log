@@ -1,0 +1,30 @@
+commit 3klcgqcyrb1qr4h33rdtymtxjdp5z6j15b5c6x5g
+Author: Chongyan Liu <s3673128@student.rmit.edu.au>
+Date:   Fri May 14 17:43:40 2021 +0800
+
+    query with index
+
+commit j856rvd1n7a9exta5i2e0k1886x9y24wcc29ij8d
+Author: Chongyan Liu <s3673128@student.rmit.edu.au>
+Date:   Wed May 12 04:05:14 2021 +0800
+
+    drop index
+
+commit nq4tmg18ahxiiic8u54eb2igtw6rpkwwlplvw5mr
+Author: Chongyan Liu <s3673128@student.rmit.edu.au>
+Date:   Tue May 11 11:28:10 2021 +0800
+
+    index file persistence
+
+commit 43yvbjwmthylaop2qmy0ol3cpney1ygok6trhnl7
+Author: Chongyan Liu <s3673128@student.rmit.edu.au>
+Date:   Thu May 6 15:16:29 2021 +0800
+
+    build a b+ tree
+
+commit 2ux8opl2ue0o1jshg1sb8u6meqblwqzajsuw5hzf
+Author: Chongyan Liu <s3673128@student.rmit.edu.au>
+Date:   Tue May 4 13:12:05 2021 +0800
+
+    read heap file and traverse data
+
